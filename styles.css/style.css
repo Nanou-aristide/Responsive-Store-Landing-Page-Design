@@ -1,0 +1,148 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: auto;
+        }
+        .nav-style{
+            height: 130px;
+        }
+    
+        h1 {
+            font-size: 1.4rem;
+            margin: 0;
+            padding: 10px;
+        }
+
+        header{
+            box-shadow: 0px 4px 1px 0px black;
+        }
+
+        .logo{
+            height: 100px;
+            width: 100px;
+            margin-left: 10px;
+        }
+
+         .active{
+            color: rgb(243, 188, 60);
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .nav-link:hover {
+            background-color: rgb(118, 170, 244);
+            border-radius: 10px;
+            color: white;
+            
+        }
+       
+        .nav-link{
+            margin-right: 7px;
+        }
+
+        
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 250px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .product-card button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .product-card button:hover {
+      background-color: #0056b3;
+    }
+
+    /* TABLETTE : 2 colonnes */
+    @media (min-width: 600px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* BUREAU : 4 colonnes */
+    @media (min-width: 992px) {
+      .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+    }
+
+  /* nav*/
+       
+        @media screen and (max-width: 760px) {
+            h1 {
+                text-align: center;
+                
+            }
+        }
+      @media (max-width: 991.98px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .navbar-nav .nav-link {
+                padding: 1px;
+                font-size: 12px;
+         }
+       }
+
+        @media screen and (max-width: 760px) {
+            .logo {
+                height: 50px;
+                width: 50px;                
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+            .jutifierText {
+                display: flex;
+                justify-content: center;               
+            }
+        }
+
+
+
+      
+
+        
